@@ -1,0 +1,24 @@
+:root {
+  --bg: #111316;
+  --panel: #1b1f24;
+  --card: #242a31;
+  --text: #f2f2f2;
+  --muted: #9ca3af;
+  --accent: #4f8cff;
+  --danger: #ff5f6d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1f242b 0%, var(--bg) 55%);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
