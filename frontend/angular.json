@@ -10,6 +10,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "outputPath": "dist/notesapp-frontend",
             "browser": "src/main.ts",
             "index": "src/index.html",
             "polyfills": [
@@ -31,5 +32,8 @@
       }
     }
   },
-  "defaultProject": "notesapp-frontend"
+  "defaultProject": "notesapp-frontend",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -3,8 +3,12 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
+const dns = require("dns");
 
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
+
+// Use public DNS resolvers to avoid local SRV lookup issues.
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const notesRoutes = require("./routes/notes");
 
